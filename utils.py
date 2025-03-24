@@ -17,7 +17,7 @@ load_dotenv()
 # Thay đường dẫn file JSON của bạn
 SERVICE_ACCOUNT_FILE = os.environ.get('GCP_JSON_PATH')
 # Thay bằng ID của file Google Sheets của bạn
-SPREADSHEET_ID = "11dGqlhQfP-gTmI08i_gCxppxVjGUkkaX9blmpJKZmiE"
+SPREADSHEET_ID = "105eppmLyEWyDyzehfkd-TUrky67B093mZPZjGlNij2I"
 gc = gspread.service_account(filename=SERVICE_ACCOUNT_FILE)
 spreadsheet = gc.open_by_key(SPREADSHEET_ID)
 
@@ -904,9 +904,8 @@ def get_email_html_body(title, voucher_list, product_image):
                                     style="margin: 0; color: #203354; direction: ltr; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-size: 18px; font-weight: 400; letter-spacing: normal; line-height: 150%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 27px;"
                                   >
                                     <strong>Kích hoạt mã code</strong>&nbsp;bằng
-                                    cách nhập mã voucher và đặt lịch
-                                    trước&nbsp;<strong>tối thiểu 24 tiếng</strong>
-                                    để đảm bảo được phục vụ tốt nhất
+                                    cách nhập mã voucher hoặc click vào nút
+                                    &nbsp;<strong>NHẬN QUÀ NGAY</strong>. Vui lòng xem danh sách cửa hàng áp dụng và đọc kĩ điều kiện sử dụng voucher trước khi dùng.
                                   </h1>
                                 </td>
                               </tr>
@@ -950,65 +949,6 @@ def get_email_html_body(title, voucher_list, product_image):
                                         </td>
                                       </tr>
                                     </table>
-                                  </div>
-                                </td>
-                              </tr>
-                            </table>
-                            <table
-                              class="heading_block block-5"
-                              width="100%"
-                              border="0"
-                              cellpadding="10"
-                              cellspacing="0"
-                              role="presentation"
-                              style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;"
-                            >
-                              <tr>
-                                <td class="pad">
-                                  <h1
-                                    style="margin: 0; color: #203354; direction: ltr; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-size: 23px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 27.599999999999998px;"
-                                  >
-                                    ĐIỀU KIỆN SỬ DỤNG VOUCHER
-                                  </h1>
-                                </td>
-                              </tr>
-                            </table>
-                            <table
-                              class="list_block block-6"
-                              width="100%"
-                              border="0"
-                              cellpadding="10"
-                              cellspacing="0"
-                              role="presentation"
-                              style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; color: #101112; direction: ltr; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; font-size: 15px; font-weight: 300; letter-spacing: 0px; line-height: 150%; text-align: left; mso-line-height-alt: 22.5px;"
-                            >
-                              <tr>
-                                <td class="pad">
-                                  <div style="margin-left: -20px">
-                                    <ul style="margin-top: 0; margin-bottom: 0; list-style-type: revert;">
-                                      <li style="margin: 0 0 0 0">
-                                        Thời hạn sử dụng sau khi kích
-                                        hoạt:&nbsp;<strong>7 ngày</strong>
-                                      </li>
-                                      <li style="margin: 0 0 0 0">
-                                        Mỗi khách hàng được sử dụng<strong>&nbsp;tối đa&nbsp;</strong><strong>2 voucher/tháng</strong>
-                                      </li>
-                                      <li style="margin: 0 0 0 0">
-                                        Không áp dụng chung với các khuyến mãi khác
-                                      </li>
-                                      <li style="margin: 0 0 0 0">
-                                        <strong>Không áp dụng cho phụ nữ có thai và người dưới 25 tuổi</strong>
-                                      </li>
-                                      <li style="margin: 0 0 0 0">
-                                        Không đổi thành tiền mặt hoặc hoàn trả tiền thừa
-                                      </li>
-                                      <li style="margin: 0 0 0 0">
-                                        <strong>Không áp dụng cho khách hàng chưa kích hoạt voucher</strong>&nbsp;hoặc&nbsp;<strong>không có lịch hẹn trước</strong>&nbsp;khi đến
-                                      </li>
-                                      <li style="margin: 0 0 0 0">
-                                        <strong>Thời gian áp dụng</strong>:&nbsp;<strong>15/02 - 30/04/2025</strong>&nbsp;<strong>Không áp dụng vào các ngày lễ đặc biệt</strong>:&nbsp;<strong>29/4 (Giỗ tổ Hùng Vương), 30/4, 1/5</strong>
-                                      </li>
-                                    </ul>
                                   </div>
                                 </td>
                               </tr>
