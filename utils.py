@@ -272,7 +272,7 @@ def send_voucher_email(customer_email, extended_order_no, goodsId, quantity, vou
     sender_password = "chqh wcwr bjws rwgd"  # Sử dụng App Password
 
     # Tiêu đề email
-    subject = f"Thông tin Voucher cho đơn {extended_order_no}"
+    subject = f"Thông tin E-Voucher cho đơn hàng{extended_order_no}"
 
     # Lấy nội dung HTML từ hàm get_email_html_body
     html_body = get_email_html_body(
