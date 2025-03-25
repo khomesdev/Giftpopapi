@@ -22,14 +22,14 @@ gc = gspread.service_account(filename=SERVICE_ACCOUNT_FILE)
 spreadsheet = gc.open_by_key(SPREADSHEET_ID)
 
 # ------------------------------ List URL -------------------------------------------------
-goods_list_url = "https://sandbox-pos.giftpop.vn:9901/interface/order/goodsListAll.m12"
-voucher_url = "https://sandbox-pos.giftpop.vn:9901/interface/order/voucherIssueList.m12"
-order_info_url = "https://sandbox-pos.giftpop.vn:9901/interface/order/orderInfo.m12"
-voucher_info_url = "https://sandbox-pos.giftpop.vn:9901/interface/order/voucherInfo.m12"
+goods_list_url = "https://pos.giftpop.vn:9901/interface/order/goodsListAll.m12"
+voucher_url = "https://pos.giftpop.vn:9901/interface/order/voucherIssueList.m12"
+order_info_url = "https://pos.giftpop.vn:9901/interface/order/orderInfo.m12"
+voucher_info_url = "https://pos.giftpop.vn:9901/interface/order/voucherInfo.m12"
 # ------------------------------ Cấu hình chung -------------------------------------------
-AUTH_KEY = "S0hPTUVTOlExRjJWbkZzYW5Sd1VYUlRRVXBPU3c="
+AUTH_KEY = "S0hPTUVTOlFYRnVVVzFMVlNVeVJsTjZORmhRYTBoWg=="
 PRIVATE_KEY_PATH = os.environ.get('PRIVATE_KEY_PATH')
-AES_KEY = "QPLXSH5QSEO7T450"
+AES_KEY = "VLQTXWBFZ9S6XU6G"
 
 # Đọc private key từ file (sử dụng một lần cho cả quá trình)
 with open(PRIVATE_KEY_PATH, "rb") as key_file:
